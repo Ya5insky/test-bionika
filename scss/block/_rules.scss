@@ -1,0 +1,128 @@
+.rules {
+    background-color: $alabaster;
+    &__container{
+        margin: 0  auto;
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        .rules__content{
+            .content-title{
+                margin-top: 105px;
+                h2{
+                    color: $curious-blue;
+                    font-size: 48px;
+                }
+            }
+        }
+
+        .rules-accordion{
+            margin-top: 62px;
+            .accordion-item{
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                .accordion__button{
+                    button {
+                        position: relative;
+                        font-size: 18px;
+                        border-radius: 20px;
+                        background-color: $international-orange;
+                        padding: 35px 48px;
+                        width: 1160px;
+                        display: flex;
+                        justify-content: space-between;
+                        cursor: pointer;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        color: $white;
+                        span {
+                            span {
+                                color: $waxflower;
+                                padding-left: 13px;
+                            }
+                        }
+                        .button-icon {
+                            transform: translateY(-50%);
+                            height: 12px;
+                            width: 9px;
+                            margin-right: 40px;
+                        }
+                        .icon-plus {
+                            &::before {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: 140%;
+                                box-sizing: border-box;
+                                transform: translateY(-50%);
+                                border-style: solid;
+                                border-width: 9px 35px 0 0px 
+                            }
+
+                            &::after{
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                box-sizing: border-box;
+                                top: 0;
+                                left: 198%;
+                                transform: translateX(-50%);
+                                border-style: solid;
+                                border-width: 33px 0 0 9px;
+                            }
+                        }
+
+                        .icon-minus {
+                            &::before {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: 140%;
+                                box-sizing: border-box;
+                                transform: translateY(-50%);
+                                border-style: solid;
+                                border-width: 9px 35px 0 0px 
+                            }
+                        }
+                    }
+                }
+                .accordion__text{
+                    color: $white;
+                    border-radius: 20px;
+                    margin-top: 10px;
+                    transition: .3s;
+                    max-height: 0;
+                    overflow: hidden;
+                    & p {
+                        background-color: $international-orange;
+                        width: 1160px;
+                        font-weight: 400;
+                        max-height: 100%;
+                        font-size: 18px;
+                        line-height: 1.2;
+                        padding: 20px 16px;
+                    }
+                }
+            }
+        }
+
+        .content-notification {
+            margin: 105px 0;
+            .notification-title{
+                h3 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: $black;
+                }
+            }
+            .notification-description{
+                margin-top: 35px;
+                p {
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

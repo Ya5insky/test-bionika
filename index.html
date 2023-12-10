@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заморские Котики</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('sAnT4_pLbt9gatUSK');
+        })();
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <button class="header__burger-btn" id="burgerBtn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="header__nav">
+                <ul class="site-nav">
+                    <li class="site-nav__item"><a href="#">о нас</a></li>
+                    <li class="site-nav__item"><a href="#">для посещения</a></li>
+                    <li class="site-nav__item"><a href="#">услуги и стоимость</a></li>
+                    <li class="site-nav__item"><a href="#">галерея</a></li>
+                    <li class="site-nav__item"><a href="#">информация</a></li>
+                    <li class="site-nav__item"><a href="#">отзывы</a></li>
+                    <li class="site-nav__item"><a href="#">контакты</a></li>
+                </ul>
+                <div class="icons-nav">
+                    <a href="#"><img src="./img/favicon/tel.png" alt="Телефон"></a>
+                    <a href="#"><img src="./img/favicon/subtract.png" alt="Связь"></a>
+                    <a href="#"><img src="./img/favicon/vk.png" alt="ВК"></a>
+                    <a href="#"><img src="./img/favicon/inst.png" alt="Иснтаграм"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="content__container">
+            <div class="content__logo logo">
+                <picture class="logo__image">
+                    <img src="./img/logo.png" alt="logo">
+                </picture>
+                <div class="content__information information">
+                    <h1 class="information__title">Клуб грудничкового <br>и детского плавания</h1>
+                    <div class="information__button">
+                        <button class="button" id="openModal">Записаться</button>
+            
+                       
+                        <div id="modal" class="modal">
+                            <div class="modal__content">
+                              <span class="modal__close">&times;</span>
+                              <form class="modal__form" id="signupForm">
+                                <input type="text" class="modal__input" id="name" placeholder="Имя" required>
+                                <span id="nameError" class="error"></span>
+                                <input type="email" class="modal__input" id="email" placeholder="Адрес электронной почты">
+                                <span id="emailError" class="error"></span>
+                                <input type="tel" class="modal__input" id="phone" placeholder="Телефон" required>
+                                <span id="phoneError" class="error"></span>
+                                <textarea class="modal__input" id="message" placeholder="Текст"></textarea>
+                                <span id="messageError" class="error"></span>
+                          
+                                <button  id="submitBtn" type="submit" class="modal__submit">Отправить</button>
+                              </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p class="information__sale information__sale--highlighted">
+                        <span>50%</span>
+                        скидка на
+                        <br>
+                        первое занятие
+                    </p>
+                </div>
+            </div>
+
+            <div class="circle-wrapper">
+                <div class="circle-image">
+                    <img src="./img/photo-kid.png" alt="Ребенок">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="description">
+        <div class="description__container">
+            <div class="description__main">
+                <div class="main-title">
+                    <h3>Добро пожаловать!</h3>
+                </div>
+                <p>  Мы – клуб грудничкового и детского плавания.
+                    <br>
+                    <br>
+                    При создании клуба мы использовали самые лучшие современные материалы, оборудование и системы фильтрации и очистки воды, поскольку забота о здоровье 
+                    и безопасности ваших малышей – наш главный приоритет.
+                    <br>
+                    <br>
+                    В нашем клубе мы занимаемся плаванием с детьми от 1 месяца до 10 лет с любой степенью подготовки. При построении программы занятий мы учитываем навыки 
+                    и способности каждого ребенка, поэтому не важно, есть ли у вашего малыша опыт посещения бассейна.  Занятия состоят из аквагимнастики и упражнений, проходящих 
+                    в игровой форме и направленных на обучение ребенка плаванию, нырянию, общее развитие и оздоровление организма малыша.
+                    <br>
+                    <br>
+                    Наши тренеры – это профессионалы с педагогическим,  спортивным, медицинским 
+                    и профильным образованием, которых объединяет не только большой опыт работы 
+                    в сфере грудничкового и детского плавания, но и мягкий подход в обучении плаванию.
+                    <br>
+                    <br>
+                    Клуб работает с 9.00 до 21.00 ежедневно, с понедельника по воскресенье.
+                    <br>
+                    <br>
+                    <br>
+                    <span>Будем рады встрече с вами!</span>
+                </p>
+
+            </div>
+            <div class="description__photo">
+                <img src="./img/Frame.svg" alt="животное">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="rules">
+        <div class="rules__container">
+            <div class="rules__content">
+                <div class="content-title">
+                    <h2>Для посещения бассейна необходимо:</h2>
+                </div>
+
+                <div class="rules-accordion">
+                   <div class="accordion-item">
+                        <div class="accordion__button" id="accordionButton">
+                            <button>
+                                <span>детям до года</span>
+                                <i class="button-icon icon-plus"></i>
+                            </button>
+                        </div>
+                        <div class="accordion__text">
+                            <p>В домашних условиях грудничковым плаванием можно заниматься примерно через 7 дней после рождения. В бассейне ребенок может начинать заниматься, когда у него полностью зажила пупочная ранка: в зависимости от особенностей организма, это происходит через 3 недели — 1,5 месяца</p>
+                        </div>
+                   </div>
+                   <div class="accordion-item">
+                    <div class="accordion__button" id="accordionButton">
+                        <button>
+                            <span>детям старше года</span>
+                            <i class="button-icon icon-plus"></i>
+                        </button>
+                    </div>
+                    <div class="accordion__text">
+                       <p>Дети старше 3 лет могут посещать бассейн в обычных плавках, однако важно оценить вероятность возникновения «непредвиденных ситуаций» - испражнения в воде, ответственность за это несут родители.</p>
+                    </div>
+               </div>
+               <div class="accordion-item">
+                <div class="accordion__button" id="accordionButton">
+                    <button>
+                        <span>маме <span>для занятий мама + малыш</span></span>
+                        <i class="button-icon icon-plus"></i>
+                    </button>
+                </div>
+                <div class="accordion__text">
+                   <p>Занятия в бассейне до года способствуют адаптации малыша к жизни и своевременному психическому и физическому развитию. Если ребенок еще не научился самостоятельно переворачиваться или ползать, вы можете просто походить с ним в воде, совершая легкие массирующие движения. Эти манипуляции улучшат кровоток ребенка. Водные тренировки способствуют развитию координации и равновесия.
+                    После 9 месяцев возможно обучать ребенка самостоятельным движениям в воде независимо от мамы.</p>
+                </div>
+           </div>
+           <div class="accordion-item">
+            <div class="accordion__button" id="accordionButton">
+                <button>
+                    <span>сопровождающим</span>
+                    <i class="button-icon icon-plus icon-minus"></i>
+                </button>
+            </div>
+            <div class="accordion__text">
+               <p>Дети до 14 лет допускаются к занятиям либо в сопровождении взрослых, либо под руководством тренера. Подростки, умеющие плавать, могут посещать бассейн без родителей с 14 лет.</p>
+            </div>
+       </div>
+                </div>
+
+                <div class="content-notification">
+                    <div class="notification-title">
+                        <h3>Уважаемые взрослые!</h3>
+                    </div>
+                    <div class="notification-description">
+                        <p>
+                            Просим вас с пониманием отнестись к нашим требованиям к одежде для плавания, так как<br>  
+                            это в первую очередь забота о комфорте и гигиене вашего малыша и остальных посетителей <br> 
+                            Мы трепетно относимся к качеству воды в наших бассейнах.<br> 
+                            Плавательные шапочки мы рекомендуем использовать специальные, на тканевой основе,<br>  
+                            так как они вызывают наименьший дискомфорт у малыша.<br> 
+                            Плавки должны быть подобраны строго по размеру и иметь плотные манжеты <br> 
+                            с резинками вокруг пояса и ножек.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer-links">
+                <div class="links-contacts">
+                    <a class="contacts-tel" href="tel:89270091133">8 927 009 11 33</a>
+                    <a class="contacts-email" href="info.kotiki.samara@gmail.com">info.kotiki.samara@gmail.com</a>
+                </div>
+                <div class="links-adress">
+                    <div class="adress-time">
+                        <p>Время работы с 9:00-21:00</p>
+                    </div>
+                    <div class="adress-maps">
+                        <p>г.Самара, ул. Л.Шмидта 19. стр 2</p>
+                        <a href="">смотреть на карте</a>
+                    </div>
+                    <div class="adress-maps">
+                        <p>г.Самара, ул. Пр.Кирова 348</p>
+                        <a href="">смотреть на карте</a>
+                    </div>
+                    <div class="footer__copyright"">
+                        <p>© 2021 Клуб грудничкового и детского плавания</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+        }
+    </style>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

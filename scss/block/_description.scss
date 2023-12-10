@@ -1,0 +1,41 @@
+.description {
+    background-color: $curious-blue;
+    height: 560px;
+    &__container{
+        position: relative;
+        margin: 0 auto;
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        .description__main{
+            width: 775px;
+            padding-top: 60px;
+            color: $white;
+            .main-title {
+                text-transform: uppercase;
+                h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+            p {
+                margin-top: 21px;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 18px;
+                span {
+                    font-weight: 500;
+                }
+            }
+            
+        }
+        .description__photo {
+            padding-top: 23px;
+            position: absolute;
+            left: 700px;
+            
+        }
+    }
+}
+
+

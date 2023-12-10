@@ -1,0 +1,82 @@
+.header{
+    background-color: $curious-blue;
+    &__container{
+        margin: 0 auto;
+        width: 1200px;
+        .header__nav {
+            height: 76px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            .site-nav{
+                font-size: 14px;
+                display: flex;
+                width: 900px;
+                text-transform: uppercase;
+                list-style: none;
+                color: $white;
+                font-weight: 700;
+                justify-content: space-between;
+                &:first-child{
+                    padding-left: 0;
+                }
+                a {
+                    color: $white;
+                    &:hover {
+                        color: $international-orange;
+                    }
+                }
+            }
+        
+            .icons-nav {
+                img{
+                    height: 19px;
+                }
+            }
+        }
+    }
+}
+
+
+.header__burger-btn{
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    z-index: 4;
+    span{
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: $international-orange;
+        left: 5px;
+        transition: transform .5s, opacity .5s, background-color .5s;
+        &:nth-child(1){
+            transform: translateY(-10px);
+        }
+        &:nth-child(3){
+            transform: translateY(10px);
+        }
+    }
+}
+
+.header.open {
+    .header__burger-btn{
+        span{
+            background-color: $white;
+            &:nth-child(1){
+               transform: translateY(0) rotate(45deg);
+            }
+            &:nth-child(3){
+                transform: translateY(0) rotate(-45deg);
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+        }
+    }
+}
